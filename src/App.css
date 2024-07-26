@@ -1,38 +1,299 @@
+body, h1, label, input, select, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121838;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-image: url('./img/fashion-purple-transparent-beauty-fashion-e13a54.jpg');
+  background-size: contain;
+  background-repeat: repeat;
+  color: aliceblue;
+  font-size: x-large;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+}
+
+.main-content {
+  width: 100%;
+}
+
+a {
+  color: chartreuse;
+  text-decoration: none;
+}
+
+.questions {
+  width: 80vw;
+  position: fixed;
+  margin-top: 20vh;
+  height: 60vh;
+  background-color: #00008b;
+  z-index: 101;
+  display: none;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid chartreuse;
+}
+
+.questions button {
+  width: 15%;
+  align-self: center;
+  margin: 10px;
+}
+
+.qtext {
+  height: 70%;
+  overflow-y: scroll;
+  margin: 20px;
+  background-color: rgb(51, 49, 49);
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid chartreuse;
+}
+
+.answer {
+  font-style: italic;
+  color: #2d87e6;
+}
+
+.breedname {
+  background: linear-gradient(to bottom, 
+    rgba(60, 1, 66, 0.5) 0%, 
+    rgba(60, 1, 66, 0.4) 20%,
+    rgba(60, 1, 66, 0.3) 40%,
+    rgba(60, 1, 66, 0.2) 60%,
+    rgba(60, 1, 66, 0.15) 70%,
+    rgba(60, 1, 66, 0.1) 80%,
+    rgba(60, 1, 66, 0.08) 90%,
+    rgba(60, 1, 66, 0.03) 95%, 
+    rgba(60, 1, 66, 0.01) 100%
+  );
+  padding: 10px 20px;
+  color: chartreuse;
+  font-size: 1.5em;
+  text-shadow: rgb(27, 4, 87) 1px 1px 1px;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  width: 100%;
+}
+
+.headbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  height: 100px;
+}
+
+.headbartop, .faq {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  height: 100%;
+}
+
+.headbartop {
+  background-color: darkblue;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+.headbartop img {
+  width: 80px;
+  height: 80px;
+  margin: 0 10px;
+}
+
+.headbartop h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.blue {
+  color: #2d87e6;
+  font-weight: bold;
+}
+
+.green {
+  color: chartreuse;
+  font-weight: bolder;
+}
+
+.pink {
+  color: #da2de6;
+  font-weight: bold;
+}
+
+.faq {
+  background-color: chartreuse;
+  flex: 0 1 200px;
+  justify-content: center;
+}
+
+.faq img {
+  height: 80%;
+}
+
+.headbarbottom {
+  background-color: rgb(51, 49, 49);
+  color: aliceblue;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 20px 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+input, select {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+button {
+  background-color: chartreuse;
+  color: blue;
+  font-size: large;
+  font-weight: bolder;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid blue;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 80vw;
+  margin: 0 auto;
+  height: max-content;
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+
+.gallery-image {
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.2s;
+  border: 3px solid chartreuse;
+  box-shadow: #121838 0 0 10px;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+}
+
+.image-gallery .image-gallery-thumbnail {
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+/* Tablets (landscape) ----------- */
+@media only screen and (max-width: 1200px) {
+  .headbartop, .faq {
+    padding: 0 5%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .headbartop h1 {
+    font-size: 1.5em;
+  }
+
+  .headbartop img {
+    width: 60px;
+    height: 60px;
+  }
+
+  form {
+    margin: 20px 50px;
+  }
+}
+
+/* Tablets (portrait) ----------- */
+@media only screen and (max-width: 768px) {
+  .headbartop, .faq {
+    padding: 0 5%;
+  }
+
+  .headbartop h1 {
+    font-size: 1.3em;
+  }
+
+  .headbartop img {
+    width: 50px;
+    height: 50px;
+  }
+
+  form {
+    margin: 20px 20px;
+  }
+}
+
+/* Mobile (landscape) ----------- */
+@media only screen and (max-width: 600px) {
+  .headbartop {
+    padding: 10px 0;
+  }
+
+  .headbartop h1 {
+    font-size: 1.5em;
+  }
+
+  .headbartop img {
+    width: 40px;
+    height: 40px;
+  }
+
+  form {
+    margin: 20px 10px;
+  }
+
+  .App {
+    font-size: large;
+  }
+}
+
+/* Mobile (portrait) ----------- */
+@media only screen and (max-width: 480px) {
+  .headbartop h1 {
+    font-size: 1.2em;
+  }
+
+  .headbartop img {
+    width: 30px;
+    height: 30px;
+  }
+
+  form {
+    margin: 10px 10px;
+  }
+
+  .App {
+    font-size: medium;
   }
 }
