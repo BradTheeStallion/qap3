@@ -13,7 +13,7 @@ function BreedSelector({ setBreed, setNumImages, setImages }) {
         const breedList = Object.keys(data.message);
         setBreeds(breedList);
         if (breedList.length > 0) {
-          setSelectedBreed(breedList[0]); // Set the first breed as the selected breed
+          setSelectedBreed(breedList[0]);
         }
       });
   }, []);
