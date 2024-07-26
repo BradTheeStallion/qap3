@@ -1,3 +1,7 @@
+// Bradley Ayers
+// QAP3
+// July 22 - 26, 2024
+
 import React, { useState, useEffect } from 'react';
 import { capitalizeWords } from './utils';
 

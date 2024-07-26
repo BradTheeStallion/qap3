@@ -1,3 +1,7 @@
+// Bradley Ayers
+// QAP3
+// July 22 - 26, 2024
+
 import React, { useEffect, useRef, useState } from 'react';
 import doggo1 from './img/doggo1.svg';
 import doggo2 from './img/doggo2.svg';

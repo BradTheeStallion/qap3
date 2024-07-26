@@ -1,3 +1,7 @@
+// Bradley Ayers
+// QAP3
+// July 22 - 26, 2024
+
 import React from 'react';
 
 function ImageGallery({ images }) {
