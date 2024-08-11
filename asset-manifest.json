@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/qap3/static/css/main.78aa2dc4.css",
+    "main.js": "/qap3/static/js/main.3bd54f54.js",
+    "static/js/453.6fa09acb.chunk.js": "/qap3/static/js/453.6fa09acb.chunk.js",
+    "static/media/fashion-purple-transparent-beauty-fashion-e13a54.jpg": "/qap3/static/media/fashion-purple-transparent-beauty-fashion-e13a54.1bd1e1d5a3a149f4481a.jpg",
+    "static/media/doggo2.svg": "/qap3/static/media/doggo2.4d26774685589139d902d05eba124c91.svg",
+    "static/media/home.svg": "/qap3/static/media/home.4b537a333e48d67081194fc92ad3fe46.svg",
+    "static/media/faq.svg": "/qap3/static/media/faq.0f057e60c6b9fe8cdd07dfc461674908.svg",
+    "index.html": "/qap3/index.html",
+    "static/media/doggo1.svg": "/qap3/static/media/doggo1.94f7b3850dc0cc190bfdacc36dbf33d4.svg",
+    "main.78aa2dc4.css.map": "/qap3/static/css/main.78aa2dc4.css.map",
+    "main.3bd54f54.js.map": "/qap3/static/js/main.3bd54f54.js.map",
+    "453.6fa09acb.chunk.js.map": "/qap3/static/js/453.6fa09acb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78aa2dc4.css",
+    "static/js/main.3bd54f54.js"
+  ]
+}
